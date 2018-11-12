@@ -1,0 +1,648 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{77A7BE74-29F7-4775-BC32-A3098AAE17F8}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Epione</RootNamespace>
+    <AssemblyName>Epione</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.2.2.1\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.1\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin">
+      <HintPath>..\packages\Microsoft.Owin.3.0.1\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.3.0.1\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security">
+      <HintPath>..\packages\Microsoft.Owin.Security.3.0.1\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Facebook">
+      <HintPath>..\packages\Microsoft.Owin.Security.Facebook.3.0.1\lib\net45\Microsoft.Owin.Security.Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.3.0.1\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.3.0.1\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Google">
+      <HintPath>..\packages\Microsoft.Owin.Security.Google.3.0.1\lib\net45\Microsoft.Owin.Security.Google.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Twitter">
+      <HintPath>..\packages\Microsoft.Owin.Security.Twitter.3.0.1\lib\net45\Microsoft.Owin.Security.Twitter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.MicrosoftAccount">
+      <HintPath>..\packages\Microsoft.Owin.Security.MicrosoftAccount.3.0.1\lib\net45\Microsoft.Owin.Security.MicrosoftAccount.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\IdentityConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="App_Start\ManageController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201811121344585_v1.cs" />
+    <Compile Include="Migrations\201811121344585_v1.Designer.cs">
+      <DependentUpon>201811121344585_v1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Startup.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="clinica\404.html" />
+    <Content Include="clinica\appointment.html" />
+    <Content Include="clinica\blog-full.html" />
+    <Content Include="clinica\blog-left-sidebar.html" />
+    <Content Include="clinica\blog-right-sidebar.html" />
+    <Content Include="clinica\blog.html" />
+    <Content Include="clinica\contact-us.html" />
+    <Content Include="clinica\css\ajax-loader.html" />
+    <Content Include="clinica\css\bootstrap.min.css" />
+    <Content Include="clinica\css\font-awesome.min.css" />
+    <Content Include="clinica\css\images\close.png" />
+    <Content Include="clinica\css\images\ui-icons_444444_256x240.png" />
+    <Content Include="clinica\css\images\ui-icons_555555_256x240.png" />
+    <Content Include="clinica\css\images\ui-icons_777620_256x240.png" />
+    <Content Include="clinica\css\images\ui-icons_777777_256x240.png" />
+    <Content Include="clinica\css\images\ui-icons_cc0000_256x240.png" />
+    <Content Include="clinica\css\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="clinica\css\jquery-ui.min.css" />
+    <Content Include="clinica\css\owl.carousel.min.css" />
+    <Content Include="clinica\css\owl.theme.default.min.css" />
+    <Content Include="clinica\css\owl.video.play.png" />
+    <Content Include="clinica\css\responsive.css" />
+    <Content Include="clinica\css\style.css" />
+    <Content Include="clinica\css\YouTubePopUp.css" />
+    <Content Include="clinica\department.html" />
+    <Content Include="clinica\doctor-profile.html" />
+    <Content Include="clinica\doctors.html" />
+    <Content Include="clinica\faq.html" />
+    <Content Include="clinica\fav.ico" />
+    <Content Include="clinica\fonts\fontawesome-webfont3e6e.svg" />
+    <Content Include="clinica\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="clinica\img\blog\blog-big-1.jpg" />
+    <Content Include="clinica\img\blog\blog-big-2.jpg" />
+    <Content Include="clinica\img\blog\blog-big-3.jpg" />
+    <Content Include="clinica\img\blog\blog-big-4.jpg" />
+    <Content Include="clinica\img\blog\blog-big-5.jpg" />
+    <Content Include="clinica\img\blog\blog-thumb-1.jpg" />
+    <Content Include="clinica\img\blog\blog-thumb-2.jpg" />
+    <Content Include="clinica\img\blog\blog-thumb-3.jpg" />
+    <Content Include="clinica\img\call-to-action\call-to-action-bg-2.jpg" />
+    <Content Include="clinica\img\call-to-action\call-to-action-bg.jpg" />
+    <Content Include="clinica\img\depertment\d1.jpg" />
+    <Content Include="clinica\img\depertment\d2.jpg" />
+    <Content Include="clinica\img\depertment\d3.jpg" />
+    <Content Include="clinica\img\depertment\d4.jpg" />
+    <Content Include="clinica\img\depertment\d5.jpg" />
+    <Content Include="clinica\img\depertment\d6.jpg" />
+    <Content Include="clinica\img\depertment\d7.jpg" />
+    <Content Include="clinica\img\depertment\d8.jpg" />
+    <Content Include="clinica\img\doctors\detail-doctor.jpg" />
+    <Content Include="clinica\img\doctors\doctors-1.jpg" />
+    <Content Include="clinica\img\doctors\doctors-2.jpg" />
+    <Content Include="clinica\img\doctors\doctors-3.jpg" />
+    <Content Include="clinica\img\doctors\doctors-4.jpg" />
+    <Content Include="clinica\img\doctors\doctors-5.jpg" />
+    <Content Include="clinica\img\doctors\doctors-6.jpg" />
+    <Content Include="clinica\img\doctors\doctors-7.jpg" />
+    <Content Include="clinica\img\doctors\doctorsv2-1.jpg" />
+    <Content Include="clinica\img\doctors\doctorsv2-2.jpg" />
+    <Content Include="clinica\img\doctors\doctorsv2-3.jpg" />
+    <Content Include="clinica\img\hero\hero-bg.jpg" />
+    <Content Include="clinica\img\icons\icon-appoinment.png" />
+    <Content Include="clinica\img\icons\icon-blog-title.png" />
+    <Content Include="clinica\img\icons\icon-emergency-case.png" />
+    <Content Include="clinica\img\icons\icon-find-doctors.png" />
+    <Content Include="clinica\img\icons\icon-medical-service.png" />
+    <Content Include="clinica\img\icons\icon-service-title.png" />
+    <Content Include="clinica\img\icons\icon-whychoosev2-title.png" />
+    <Content Include="clinica\img\logo\logo-banner.png" />
+    <Content Include="clinica\img\logo\logo-header-1.png" />
+    <Content Include="clinica\img\logo\logo-header-2.png" />
+    <Content Include="clinica\img\service-appoinment-bg.jpg" />
+    <Content Include="clinica\img\video\video-bg.jpg" />
+    <Content Include="clinica\img\video\videobg-v2.jpg" />
+    <Content Include="clinica\index-2.html" />
+    <Content Include="clinica\index.html" />
+    <Content Include="clinica\js\app.js" />
+    <Content Include="clinica\js\bootstrap.min.js" />
+    <Content Include="clinica\js\gmap3.min.js" />
+    <Content Include="clinica\js\jquery-ui.min.js" />
+    <Content Include="clinica\js\jquery.meanmenu.js" />
+    <Content Include="clinica\js\jquery.min.js" />
+    <Content Include="clinica\js\jquery.stellar.min.js" />
+    <Content Include="clinica\js\jquery.sticky-kit.min.js" />
+    <Content Include="clinica\js\masonry.pkgd.min.js" />
+    <Content Include="clinica\js\owl.carousel.min.js" />
+    <Content Include="clinica\js\YouTubePopUp.jquery.js" />
+    <Content Include="clinica\single-left-sidebar.html" />
+    <Content Include="clinica\single-right-sidebar.html" />
+    <Content Include="clinica\single.html" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="clinica\fonts\fontawesome-webfont3e6e.eot" />
+    <Content Include="clinica\fonts\fontawesome-webfont3e6e.ttf" />
+    <Content Include="clinica\fonts\fontawesome-webfont3e6e.woff" />
+    <Content Include="clinica\fonts\fontawesome-webfont3e6e.woff2" />
+    <Content Include="clinica\fonts\fontawesome-webfontd41d.eot" />
+    <Content Include="clinica\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="clinica\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="clinica\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="clinica\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="clinica\fonts\glyphicons-halflings-regulard41d.eot" />
+    <None Include="Scripts\jquery-1.10.2-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Template\backblue.gif" />
+    <Content Include="Template\cdn.rawgit.com\google\code-prettify\master\loader\run_prettify.js" />
+    <Content Include="Template\cookies.txt" />
+    <Content Include="Template\fade.gif" />
+    <Content Include="Template\hts-cache\new.txt" />
+    <Content Include="Template\hts-cache\readme.txt" />
+    <Content Include="Template\hts-log.txt" />
+    <Content Include="Template\index.html" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\blog\05-img.jpg" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\blog\06-img.jpg" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\blog\07-img.jpg" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\blog\08-img.jpg" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\blog\09-img.jpg" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\blog\1.jpg" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\blog\10-img.jpg" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\blog\11-img.jpg" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\blog\12-img.jpg" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\blog\13-img.jpg" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\blog\2.jpg" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\blog\3.jpg" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\blog\4.jpg" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\blog\blog-page-1.jpg" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\blog\blog-page-2.jpg" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\blog\blog-page-3.jpg" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\blog\blog-page-4.jpg" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\doctors\member1.png" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\doctors\member2.png" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\doctors\member3.png" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\doctors\member4.png" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\doctors\member5.png" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\doctors\member6.png" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\doctors\member7.png" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\doctors\member8.png" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\image-gallery\1.jpg" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\image-gallery\10.jpg" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\image-gallery\11.jpg" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\image-gallery\12.jpg" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\image-gallery\13.jpg" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\image-gallery\14.jpg" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\image-gallery\15.jpg" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\image-gallery\2.jpg" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\image-gallery\3.jpg" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\image-gallery\4.jpg" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\image-gallery\5.jpg" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\image-gallery\6.jpg" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\image-gallery\7.jpg" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\image-gallery\8.jpg" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\image-gallery\9.jpg" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\image-gallery\thumb\thumb-1.jpg" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\image-gallery\thumb\thumb-10.jpg" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\image-gallery\thumb\thumb-11.jpg" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\image-gallery\thumb\thumb-12.jpg" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\image-gallery\thumb\thumb-13.jpg" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\image-gallery\thumb\thumb-14.jpg" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\image-gallery\thumb\thumb-15.jpg" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\image-gallery\thumb\thumb-2.jpg" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\image-gallery\thumb\thumb-3.jpg" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\image-gallery\thumb\thumb-4.jpg" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\image-gallery\thumb\thumb-5.jpg" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\image-gallery\thumb\thumb-6.jpg" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\image-gallery\thumb\thumb-7.jpg" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\image-gallery\thumb\thumb-8.jpg" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\image-gallery\thumb\thumb-9.jpg" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\image1.jpg" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\image2.jpg" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\image3.jpg" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\image4.jpg" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\image5.jpg" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\image6.jpg" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\image7.jpg" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\image8.jpg" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\left-bg.jpg" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\lg\avatar1.jpg" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\lg\avatar2.jpg" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\login.jpg" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\profile_av.jpg" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\sm\avatar1.jpg" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\sm\avatar2.jpg" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\sm\avatar3.jpg" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\sm\avatar4.jpg" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\sm\avatar5.jpg" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\sm\avatar6.jpg" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\xs\avatar1.jpg" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\xs\avatar10.jpg" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\xs\avatar2.jpg" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\xs\avatar3.jpg" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\xs\avatar4.jpg" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\xs\avatar5.jpg" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\xs\avatar6.jpg" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\xs\avatar7.jpg" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\xs\avatar8.jpg" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\images\xs\avatar9.jpg" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\404.html" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\500.html" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\add-departments.html" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\add-doctor.html" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\add-patient.html" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\add-payments.html" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\alerts.html" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\all-Departments.html" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\assets\bundles\datatablescripts.bundle.js" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\assets\bundles\fullcalendarscripts.bundle.js" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\assets\bundles\jvectormap.bundle.js" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\assets\bundles\knob.bundle.js" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\assets\bundles\libscripts.bundle.js" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\assets\bundles\mainscripts.bundle.js" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\assets\bundles\morrisscripts.bundle.js" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\assets\bundles\vendorscripts.bundle.js" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\assets\css\authentication.css" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\assets\css\blog.css" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\assets\css\chatapp.css" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\assets\css\color_skins.css" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\assets\css\inbox.css" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\assets\css\main.css" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\assets\css\timeline.css" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\assets\js\pages\blog\blog.js" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\assets\js\pages\calendar\calendar.js" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\assets\js\pages\cards\basic.js" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\assets\js\pages\charts\jquery-knob.js" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\assets\js\pages\charts\sparkline.js" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\assets\js\pages\file\filemanager.js" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\assets\js\pages\forms\editors.js" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\assets\js\pages\index.js" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\assets\js\pages\medias\image-gallery.js" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\assets\js\pages\rtl.js" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\assets\js\pages\tables\jquery-datatable.js" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\assets\js\pages\ui\dialogs.js" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\assets\js\pages\ui\notifications.js" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\assets\js\pages\ui\range-sliders.js" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\assets\js\pages\ui\sortable-nestable.js" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\assets\js\pages\widgets\infobox\infobox-1.js" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\blank.html" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\blog-dashboard.html" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\blog-details.html" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\blog-grid.html" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\blog-list.html" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\blog-post.html" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\book-appointment.html" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\chat.html" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\collapse.html" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\colors.html" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\contact.html" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\dashboard-rtl.html" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\dialogs.html" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\doctors.html" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\events.html" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\favicon.ico" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\file-dashboard.html" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\file-documents.html" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\file-images.html" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\file-media.html" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\forgot-password.html" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\icons.html" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\image-gallery.html" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\index.html" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\invoice.html" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\list-group.html" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\locked.html" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\mail-compose.html" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\mail-inbox.html" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\mail-single.html" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\media-object.html" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\modals.html" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\more-Departments.html" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\notifications.html" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\page-offline.html" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\patient-invoice.html" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\patient-profile.html" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\patients.html" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\payments.html" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\profile.html" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\progressbars.html" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\range-sliders.html" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\search-results.html" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\sign-in.html" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\sign-up.html" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\sortable-nestable.html" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\tabs.html" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\timeline.html" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\ui_kit.html" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\waves.html" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\widgets-app.html" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\widgets-data.html" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\plugins\bootstrap-material-datetimepicker\css\bootstrap-material-datetimepicker.css" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\plugins\bootstrap-material-datetimepicker\js\bootstrap-material-datetimepicker.js" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\plugins\bootstrap-notify\bootstrap-notify.js" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\plugins\bootstrap-select\css\bootstrap-select.css" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\plugins\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\plugins\chartjs\Chart.bundle.min.js" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\plugins\ckeditor\ckeditor.js" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\plugins\dropzone\dropzone.css" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\plugins\dropzone\dropzone.js" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\plugins\fullcalendar\fullcalendar.min.css" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\plugins\ion-rangeslider\css\ion.rangeSlider.css" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\plugins\ion-rangeslider\css\ion.rangeSlider.skinFlat.css" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\plugins\ion-rangeslider\img\sprite-skin-flat.png" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\plugins\ion-rangeslider\js\ion.rangeSlider.js" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\plugins\jquery-datatable\dataTables.bootstrap4.min.css" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\plugins\jvectormap\jquery-jvectormap-2.0.3.css" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\plugins\jvectormap\jquery-jvectormap-2.0.3.min.css" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\plugins\jvectormap\jquery-jvectormap-us-aea-en.js" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\plugins\light-gallery\css\lightgallery.css" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\plugins\light-gallery\img\loading.gif" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\plugins\light-gallery\img\video-play.png" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\plugins\light-gallery\img\vimeo-play.png" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\plugins\light-gallery\img\youtube-play.png" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\plugins\light-gallery\js\lightgallery-all.min.js" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\plugins\momentjs\moment.js" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\plugins\morrisjs\morris.css" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\plugins\morrisjs\morris.min.css" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\plugins\nestable\jquery-nestable.css" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\plugins\nestable\jquery.nestable.js" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\plugins\sweetalert\sweetalert.css" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\plugins\sweetalert\sweetalert.min.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
+    <Content Include="Views\Account\ConfirmEmail.cshtml" />
+    <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
+    <Content Include="Views\Account\ExternalLoginFailure.cshtml" />
+    <Content Include="Views\Account\ForgotPassword.cshtml" />
+    <Content Include="Views\Account\ForgotPasswordConfirmation.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\Account\ResetPassword.cshtml" />
+    <Content Include="Views\ResetPasswordConfirmation.cshtml" />
+    <Content Include="Views\Account\SendCode.cshtml" />
+    <Content Include="Views\Account\VerifyCode.cshtml" />
+    <Content Include="Views\Manage\AddPhoneNumber.cshtml" />
+    <Content Include="Views\Manage\ChangePassword.cshtml" />
+    <Content Include="Views\Manage\Index.cshtml" />
+    <Content Include="Views\Manage\ManageLogins.cshtml" />
+    <Content Include="Views\Manage\SetPassword.cshtml" />
+    <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
+    <Content Include="Views\Shared\Lockout.cshtml" />
+    <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Admin\Index.cshtml" />
+    <Content Include="Views\Admin\CreateUser.cshtml" />
+    <Content Include="Template\hts-cache\doit.log" />
+    <Content Include="Template\hts-cache\new.lst" />
+    <Content Include="Template\hts-cache\new.zip" />
+    <Content Include="Template\hts-cache\winprofile.ini" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\assets\fonts\Material-Design-Iconic-Fontd1f1.ttf" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\assets\fonts\Material-Design-Iconic-Fontd1f1.woff" />
+    <Content Include="Template\thememakker.com\templates\oreo\hospital\html\light\assets\fonts\Material-Design-Iconic-Fontd1f1.woff2" />
+    <Content Include="Views\Account\SmartLogin.cshtml" />
+    <Content Include="Views\Account\SmartRegister.cshtml" />
+    <Content Include="Views\Home\IndexDash.cshtml" />
+    <Content Include="Views\Home\AddDoctor.cshtml" />
+    <Content Include="Views\Home\IndexDoc.cshtml" />
+    <Content Include="Views\Home\IndexPatient.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="packages.config" />
+    <None Include="Project_Readme.html" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DATA\DATA.csproj">
+      <Project>{AD5ABCBD-8896-444C-A09D-121DADC6C05A}</Project>
+      <Name>DATA</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Domaine\Domain.csproj">
+      <Project>{CF3C48E8-9504-4EC6-A0B0-55350B75B4AC}</Project>
+      <Name>Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ServicePattern\ServicePattern.csproj">
+      <Project>{2c2ae60b-ab96-4a15-ab6f-bffe94bcac41}</Project>
+      <Name>ServicePattern</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Service\Service.csproj">
+      <Project>{a2b0faec-52f3-4e1f-9cee-8ff4880457d6}</Project>
+      <Name>Service</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201811121344585_v1.resx">
+      <DependentUpon>201811121344585_v1.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51403</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:51403/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

@@ -1,0 +1,71 @@
+HTTrack3.49-2+htsswf+htsjava launched on Sat, 10 Nov 2018 16:29:06 at https://thememakker.com/templates/oreo/hospital/html/light/index.html +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "fr, en, *" https://thememakker.com/templates/oreo/hospital/html/light/index.html -O1 "C:\Mes Sites Web\cccc" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+16:29:08	Warning: 	Note: due to https://thememakker.com remote robots.txt rules, links beginning with these path will be forbidden: /massive-event/, /project/, /site-img/, /tools/, /dev/ (see in the options to disable this)
+16:29:30	Warning: 	link is probably looping, type unknown, aborting: https://thememakker.com/templates/oreo/hospital/html/light/light/light/light/light/light/light/light/index2.html
+16:29:44	Warning: 	link is probably looping, type unknown, aborting: https://thememakker.com/templates/oreo/hospital/html/light/light/light/light/light/light/light/light/assets/fonts/nucleo-outline.eot
+16:29:48	Warning: 	link is probably looping, type unknown, aborting: https://thememakker.com/templates/oreo/hospital/html/light/light/light/light/light/light/light/light/assets/fonts/nucleo-outline.eot
+16:29:52	Warning: 	link is probably looping, type unknown, aborting: https://thememakker.com/templates/oreo/hospital/html/light/light/light/light/light/light/light/light/assets/fonts/nucleo-outline.woff2
+16:29:56	Warning: 	link is probably looping, type unknown, aborting: https://thememakker.com/templates/oreo/hospital/html/light/light/light/light/light/light/light/light/assets/fonts/nucleo-outline.woff
+16:30:01	Warning: 	link is probably looping, type unknown, aborting: https://thememakker.com/templates/oreo/hospital/html/light/light/light/light/light/light/light/light/assets/fonts/nucleo-outline.ttf
+16:30:10	Warning: 	link is probably looping, type unknown, aborting: https://thememakker.com/templates/oreo/hospital/html/light/light/light/light/light/light/light/light/index2.html
+16:30:15	Warning: 	link is probably looping, type unknown, aborting: https://thememakker.com/templates/oreo/hospital/html/light/light/light/light/light/light/light/light/index2.html
+16:30:20	Warning: 	link is probably looping, type unknown, aborting: https://thememakker.com/templates/oreo/hospital/html/light/light/light/light/light/light/light/light/index2.html
+16:30:24	Warning: 	link is probably looping, type unknown, aborting: https://thememakker.com/templates/oreo/hospital/html/light/light/light/light/light/light/light/light/index2.html
+16:30:30	Warning: 	link is probably looping, type unknown, aborting: https://thememakker.com/templates/oreo/hospital/html/light/light/light/light/light/light/light/light/index2.html
+16:30:36	Warning: 	link is probably looping, type unknown, aborting: https://thememakker.com/templates/oreo/hospital/html/light/light/light/light/light/light/light/light/index2.html
+16:30:46	Warning: 	link is probably looping, type unknown, aborting: https://thememakker.com/templates/oreo/hospital/html/light/light/light/light/light/light/light/light/index2.html
+16:30:49	Warning: 	link is probably looping, type unknown, aborting: https://thememakker.com/templates/oreo/hospital/html/light/light/light/light/light/light/light/light/index2.html
+16:30:53	Warning: 	link is probably looping, type unknown, aborting: https://thememakker.com/templates/oreo/hospital/html/light/light/light/light/light/light/light/light/index2.html
+16:30:56	Warning: 	link is probably looping, type unknown, aborting: https://thememakker.com/templates/oreo/hospital/html/light/light/light/light/light/light/light/light/index2.html
+16:30:59	Warning: 	link is probably looping, type unknown, aborting: https://thememakker.com/templates/oreo/hospital/html/light/light/light/light/light/light/light/light/index2.html
+16:31:02	Warning: 	link is probably looping, type unknown, aborting: https://thememakker.com/templates/oreo/hospital/html/light/light/light/light/light/light/light/light/index2.html
+16:31:07	Warning: 	link is probably looping, type unknown, aborting: https://thememakker.com/templates/oreo/hospital/html/light/light/light/light/light/light/light/light/index2.html
+16:31:10	Warning: 	link is probably looping, type unknown, aborting: https://thememakker.com/templates/oreo/hospital/html/light/light/light/light/light/light/light/light/index2.html
+16:31:13	Warning: 	link is probably looping, type unknown, aborting: https://thememakker.com/templates/oreo/hospital/html/light/light/light/light/light/light/light/light/index2.html
+16:31:16	Warning: 	link is probably looping, type unknown, aborting: https://thememakker.com/templates/oreo/hospital/html/light/light/light/light/light/light/light/light/index2.html
+16:31:26	Warning: 	link is probably looping, type unknown, aborting: https://thememakker.com/templates/oreo/hospital/html/light/light/light/light/light/light/light/light/index2.html
+16:31:32	Warning: 	link is probably looping, type unknown, aborting: https://thememakker.com/templates/oreo/hospital/html/light/light/light/light/light/light/light/light/assets/bundles/index.bundle.js
+16:31:36	Warning: 	link is probably looping, type unknown, aborting: https://thememakker.com/templates/oreo/hospital/html/light/light/light/light/light/light/light/light/index2.html
+16:31:40	Warning: 	link is probably looping, type unknown, aborting: https://thememakker.com/templates/oreo/hospital/html/light/light/light/light/light/light/light/light/index2.html
+16:31:49	Warning: 	link is probably looping, type unknown, aborting: https://thememakker.com/templates/oreo/hospital/html/light/light/light/light/light/light/light/light/index2.html
+16:31:52	Warning: 	link is probably looping, type unknown, aborting: https://thememakker.com/templates/oreo/hospital/html/light/light/light/light/light/light/light/light/index2.html
+16:31:58	Warning: 	link is probably looping, type unknown, aborting: https://thememakker.com/templates/oreo/hospital/html/light/light/light/light/light/light/light/light/index2.html
+16:32:04	Warning: 	link is probably looping, type unknown, aborting: https://thememakker.com/templates/oreo/hospital/html/light/light/light/light/light/light/light/light/index2.html
+16:32:07	Warning: 	link is probably looping, type unknown, aborting: https://thememakker.com/templates/oreo/hospital/html/light/light/light/light/light/light/light/light/index2.html
+16:32:10	Warning: 	link is probably looping, type unknown, aborting: https://thememakker.com/templates/oreo/hospital/html/light/light/light/light/light/light/light/light/index2.html
+16:32:20	Warning: 	link is probably looping, type unknown, aborting: https://thememakker.com/templates/oreo/hospital/html/light/light/light/light/light/light/light/light/index2.html
+16:32:23	Warning: 	link is probably looping, type unknown, aborting: https://thememakker.com/templates/oreo/hospital/html/light/light/light/light/light/light/light/light/index2.html
+16:32:28	Warning: 	link is probably looping, type unknown, aborting: https://thememakker.com/templates/oreo/hospital/html/light/light/light/light/light/light/light/light/index2.html
+16:32:32	Warning: 	link is probably looping, type unknown, aborting: https://thememakker.com/templates/oreo/hospital/html/light/light/light/light/light/light/light/light/index2.html
+16:32:36	Warning: 	link is probably looping, type unknown, aborting: https://thememakker.com/templates/oreo/hospital/html/light/light/light/light/light/light/light/light/assets/css/rtl.css
+16:32:39	Warning: 	link is probably looping, type unknown, aborting: https://thememakker.com/templates/oreo/hospital/html/light/light/light/light/light/light/light/light/index2.html
+16:32:45	Warning: 	link is probably looping, type unknown, aborting: https://thememakker.com/templates/oreo/hospital/html/light/light/light/light/light/light/light/light/index2.html
+16:32:56	Warning: 	link is probably looping, type unknown, aborting: https://thememakker.com/templates/oreo/hospital/html/light/light/light/light/light/light/light/light/index2.html
+16:32:58	Warning: 	link is probably looping, type unknown, aborting: https://thememakker.com/templates/oreo/hospital/html/light/light/light/light/light/light/light/light/index2.html
+16:33:01	Warning: 	link is probably looping, type unknown, aborting: https://thememakker.com/templates/oreo/hospital/html/light/light/light/light/light/light/light/light/index2.html
+16:33:03	Warning: 	link is probably looping, type unknown, aborting: https://thememakker.com/templates/oreo/hospital/html/light/light/light/light/light/light/light/light/index2.html
+16:33:06	Warning: 	link is probably looping, type unknown, aborting: https://thememakker.com/templates/oreo/hospital/html/light/light/light/light/light/light/light/light/index2.html
+16:33:08	Warning: 	link is probably looping, type unknown, aborting: https://thememakker.com/templates/oreo/hospital/html/light/light/light/light/light/light/light/light/index2.html
+16:33:12	Warning: 	link is probably looping, type unknown, aborting: https://thememakker.com/templates/oreo/hospital/html/light/light/light/light/light/light/light/light/index2.html
+16:33:14	Warning: 	link is probably looping, type unknown, aborting: https://thememakker.com/templates/oreo/hospital/html/light/light/light/light/light/light/light/light/index2.html
+16:33:17	Warning: 	link is probably looping, type unknown, aborting: https://thememakker.com/templates/oreo/hospital/html/light/light/light/light/light/light/light/light/index2.html
+16:33:18	Warning: 	link is probably looping, type unknown, aborting: https://thememakker.com/templates/oreo/hospital/html/light/light/light/light/light/light/light/light/index2.html
+16:33:20	Warning: 	link is probably looping, type unknown, aborting: https://thememakker.com/templates/oreo/hospital/html/light/light/light/light/light/light/light/light/index2.html
+16:33:22	Warning: 	link is probably looping, type unknown, aborting: https://thememakker.com/templates/oreo/hospital/html/light/light/light/light/light/light/light/light/index2.html
+16:33:25	Warning: 	link is probably looping, type unknown, aborting: https://thememakker.com/templates/oreo/hospital/html/light/light/light/light/light/light/light/light/index2.html
+16:33:27	Warning: 	link is probably looping, type unknown, aborting: https://thememakker.com/templates/oreo/hospital/html/light/light/light/light/light/light/light/light/index2.html
+16:33:31	Warning: 	link is probably looping, type unknown, aborting: https://thememakker.com/templates/oreo/hospital/html/light/light/light/light/light/light/light/light/index2.html
+16:33:33	Warning: 	link is probably looping, type unknown, aborting: https://thememakker.com/templates/oreo/hospital/html/light/light/light/light/light/light/light/light/index2.html
+16:33:35	Warning: 	link is probably looping, type unknown, aborting: https://thememakker.com/templates/oreo/hospital/html/light/light/light/light/light/light/light/light/index2.html
+16:33:37	Warning: 	link is probably looping, type unknown, aborting: https://thememakker.com/templates/oreo/hospital/html/light/light/light/light/light/light/light/light/index2.html
+16:33:39	Warning: 	link is probably looping, type unknown, aborting: https://thememakker.com/templates/oreo/hospital/html/light/light/light/light/light/light/light/light/index2.html
+16:33:41	Warning: 	link is probably looping, type unknown, aborting: https://thememakker.com/templates/oreo/hospital/html/light/light/light/light/light/light/light/light/index2.html
+
+HTTrack Website Copier/3.49-2 mirror complete in 4 minutes 36 seconds : 211 links scanned, 210 files written (18960278 bytes overall) [15538911 bytes received at 56300 bytes/sec], 4054543 bytes transferred using HTTP compression in 60 files, ratio 10%, 13.0 requests per connection
+(No errors, 60 warnings, 0 messages)

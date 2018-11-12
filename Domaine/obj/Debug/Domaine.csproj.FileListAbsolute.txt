@@ -1,0 +1,4 @@
+C:\Users\yahya\Desktop\Epione\Domaine\bin\Debug\Domaine.dll
+C:\Users\yahya\Desktop\Epione\Domaine\bin\Debug\Domaine.pdb
+C:\Users\yahya\Desktop\Epione\Domaine\obj\Debug\Domaine.dll
+C:\Users\yahya\Desktop\Epione\Domaine\obj\Debug\Domaine.pdb

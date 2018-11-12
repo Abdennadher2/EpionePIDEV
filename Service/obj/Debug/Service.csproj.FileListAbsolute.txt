@@ -1,0 +1,17 @@
+D:\Epione\Service\bin\Debug\Service.dll
+D:\Epione\Service\bin\Debug\Service.pdb
+D:\Epione\Service\bin\Debug\DATA.dll
+D:\Epione\Service\bin\Debug\Domaine.dll
+D:\Epione\Service\bin\Debug\ServicePattern.dll
+D:\Epione\Service\bin\Debug\EntityFramework.dll
+D:\Epione\Service\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Epione\Service\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\Epione\Service\bin\Debug\DATA.pdb
+D:\Epione\Service\bin\Debug\Domaine.pdb
+D:\Epione\Service\bin\Debug\ServicePattern.pdb
+D:\Epione\Service\bin\Debug\EntityFramework.xml
+D:\Epione\Service\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Epione\Service\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\Epione\Service\obj\Debug\Service.csprojResolveAssemblyReference.cache
+D:\Epione\Service\obj\Debug\Service.dll
+D:\Epione\Service\obj\Debug\Service.pdb
