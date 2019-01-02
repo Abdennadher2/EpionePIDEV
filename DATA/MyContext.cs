@@ -41,5 +41,7 @@ namespace DATA
 
         public DbSet<Step> Steps { get; set; }
 
+        public System.Data.Entity.DbSet<Domaine.Path> Paths { get; set; }
+
     }
 }
